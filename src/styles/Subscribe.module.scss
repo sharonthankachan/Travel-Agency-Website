@@ -1,0 +1,153 @@
+.subscribeSection {
+    padding: 4rem 1rem;
+    position: relative; 
+    
+.patternDecor{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+}
+
+    @media (min-width: 768px) {
+      padding: 6rem 2rem;
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #dfd7f961;
+    border-top-left-radius:129px !important ;
+    border-radius: 20px;
+    padding: 4rem 1.5rem;
+    position: relative;
+    // overflow: hidden;
+    z-index: 2;
+    .sendIcon {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        z-index: 3;
+        
+        img {
+          width: 70px;
+          height: auto;
+        }
+        
+        @media (max-width: 640px) {
+          top: 1rem;
+          right: 1rem;
+          
+          img {
+            width: 50px;
+          }
+        }
+      }
+    @media (min-width: 768px) {
+      padding: 4rem 4rem;
+    }
+  }
+  
+  
+  .content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.0625rem;
+    color: #5E6282;
+    font-weight: 600;
+    max-width: 900px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.5;
+    
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+    
+    @media (max-width: 640px) {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .subscribeForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 1rem;
+    
+    @media (min-width: 640px) {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+  }
+  
+  .inputWrapper {
+    position: relative;
+    flex: 1;
+  }
+  
+  .emailIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #39425D;
+    opacity: 0.7;
+    font-size: 1.25rem;
+  }
+  
+  .emailInput {
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 1rem 0 3rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: #39425D;
+    
+    &::placeholder {
+      color: #39425D;
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  .subscribeButton {
+    height: 56px;
+    padding: 0 2rem;
+    background: linear-gradient(to top, #FF8254, #FF946D);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(255, 148, 109, 0.3);
+    white-space: nowrap;
+    
+    &:hover {
+      background: linear-gradient(to top, #FF6F3C, #FF8254);
+      transform: translateY(-2px);
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  

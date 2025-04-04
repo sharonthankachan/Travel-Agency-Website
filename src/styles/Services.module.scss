@@ -1,0 +1,144 @@
+.servicesSection {
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.gridPattern {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.category {
+  color: #5E6282;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: #14183E;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Volkhov";
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: 36px;
+  transition: all 0.3s ease;
+  background-color: white;
+  position: relative;
+  overflow: visible;
+
+  &:hover {
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+    // transform: translateY(-5px);
+    box-shadow: 18px -12px 50px -10px lightgray;
+    
+    .decorElement {
+      opacity: 1;
+      transform: translate(-32px, 32px);
+    }
+  }
+
+  &.highlighted {
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.serviceIcon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    background-color: #FFF1DA;
+    z-index: -1;
+  }
+
+}
+
+.serviceTitle {
+  color: #1E1D4C;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.serviceDescription {
+  color: #5E6282;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.decorElement {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: #DF6951;
+  border-radius: 30px 0 10px 0;
+  z-index: -1;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 0.4s ease-out;
+}
+
+@media (max-width: 992px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

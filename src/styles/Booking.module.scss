@@ -1,0 +1,203 @@
+.bookTrip {
+  padding: 6rem 2rem;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.stepsContent {
+  flex: 1;
+  max-width: 500px;
+}
+
+.subtitle {
+  display: block;
+  color: #5E6282;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: #14183E;
+  font-size: 3.125rem;
+  font-weight: 700;
+  font-family: 'Volkhov', serif;
+  line-height: 1.2;
+  margin: 0 0 3rem 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.stepIconWrapper {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepIcon {
+  max-width: 100%;
+  height: auto;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  color: #5E6282;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.stepDescription {
+  color: #5E6282;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  @media(min-width:992px) {
+    max-width: 350px;
+  }
+}
+
+.tripPreview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+
+.tripImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .bookTrip {
+    padding: 5rem 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .stepsContent {
+    max-width: 100%;
+  }
+  
+  .step {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .tripPreview {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bookTrip {
+    padding: 4rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bookTrip {
+    padding: 3rem 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    br {
+      display: none;
+    }
+  }
+  
+  .step {
+    align-items: center;
+    text-align: left;
+  }
+  
+  .stepIconWrapper {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .tripPreview {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .stepIconWrapper {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stepTitle {
+    font-size: 0.95rem;
+  }
+  
+  .stepDescription {
+    font-size: 0.85rem;
+  }
+}
