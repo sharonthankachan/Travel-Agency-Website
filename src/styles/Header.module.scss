@@ -190,6 +190,12 @@
     text-align: center;
     color: #F1A501;
     border-color: #F1A501;
+
+      &:hover {
+    background: #F1A501;
+    border-color: #F1A501;
+    color: white;
+  }
   }
 }
 
