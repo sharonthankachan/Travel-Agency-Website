@@ -25,13 +25,13 @@ export default function Home() {
 
         <main className={styles.main}>
           <HeroSection />
-           <Services />
-          <TopDestinations/>
-          <Booking />  
-          <Testimonials/>
-          <Companies/>
-         <SubscribeSection/>
-           <Footer />
+          <Services />
+          <TopDestinations />
+          <Booking />
+          <Testimonials />
+          <Companies />
+          <SubscribeSection />
+          <Footer />
         </main>
       </div>
     </div>

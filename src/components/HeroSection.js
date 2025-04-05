@@ -22,8 +22,8 @@ export default function HeroSection() {
             Best Destinations around the world
           </p>
           <h1 className={styles.title}>
-            Travel, <span className={styles.highlightedText}>enjoy</span> and live a new and full life
-            <img className={styles.underline} alt="decor" src="/images/HeroUnderline.png"/>
+            Travel, <span className={styles.highlightedText}>enjoy <img className={styles.underline} alt="decor" src="/images/HeroUnderline.png"/></span> and live a new and full life
+            
           </h1>
           
           <p className={styles.subtitle}>
