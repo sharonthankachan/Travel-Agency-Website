@@ -4,9 +4,12 @@
     
 .patternDecor{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 1rem;
+    right: -4rem;
     z-index: -999;
+    @media(max-width : 1200px){
+      display: none;
+    }
 }
 
     @media (min-width: 768px) {
@@ -17,7 +20,7 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #dfd7f961;
+    background-color: #dfd7f948;
     border-top-left-radius:129px !important ;
     border-radius: 20px;
     padding: 4rem 1.5rem;
@@ -73,6 +76,11 @@
     @media (max-width: 640px) {
       font-size: 1.5rem;
     }
+
+    @media (max-width: 425px) {
+      font-size: 1rem;
+    }
+
   }
   
   .subscribeForm {
