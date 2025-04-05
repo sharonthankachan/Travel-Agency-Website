@@ -144,6 +144,12 @@
     gap: 1.5rem;
     margin-top: 2rem;
     width: 100%;
+    border:1px solid  #F1A501;
+    border-radius: 0.4rem;
+    background-color: #f1a50131;
+    padding-block: 2rem;
+    color: white !important;
+
   }
 }
 
@@ -182,6 +188,8 @@
   @media (max-width: 1024px) {
     width: 80%;
     text-align: center;
+    color: #F1A501;
+    border-color: #F1A501;
   }
 }
 

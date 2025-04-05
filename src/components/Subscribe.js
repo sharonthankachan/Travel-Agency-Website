@@ -17,6 +17,8 @@ export default function Subscribe() {
         <section className={styles.subscribeSection}>
 
             <div className={styles.container}>
+            <img alt="curly decor" className={styles.curlyDecor1} src='images/curlDecor1.png' />
+            <img alt="curly decor" className={styles.curlyDecor2} src='images/curlDecor2.png' />
                 <div className={styles.content}>
                     <h2 className={styles.title}>
                         Subscribe to get information, latest news and other

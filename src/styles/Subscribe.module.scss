@@ -25,7 +25,7 @@
     border-radius: 20px;
     padding: 4rem 1.5rem;
     position: relative;
-    // overflow: hidden;
+ 
     z-index: 2;
     .sendIcon {
         position: absolute;
@@ -39,16 +39,34 @@
         }
         
         @media (max-width: 640px) {
-          top: 1rem;
-          right: 1rem;
+          top: 0rem;
+          right: 0rem;
           
           img {
-            width: 50px;
+            width: 40px;
           }
         }
       }
     @media (min-width: 768px) {
       padding: 4rem 4rem;
+    }
+    @media (max-width: 425px) {
+      overflow: hidden;
+      border-top-left-radius:70px !important ;
+
+    }
+
+    .curlyDecor1{
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+
+    }
+    .curlyDecor2{
+      position: absolute;
+      top: 0;
+      right: 0;
+
     }
   }
   
